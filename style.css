@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&display=swap");
+
+:root {
+  --backgroundcolor-body: #6366f1;
+  --backgroundcolor-container: #fff;
+}
+
+body {
+  background-color: var(--backgroundcolor-body);
+}
+
+body,
+.btn,
+.btn-check {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  border: 1px solid;
+  border-radius: 15px;
+  background-color: var(--backgroundcolor-container);
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 250px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1,
+.output-user-name,
+.output-palindrome-name {
+  font-family: "Merriweather Sans", serif;
+  font-weight: 400;
+}
+
+/* footer */
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.copyright {
+  letter-spacing: 5px;
+}
+
+hr {
+  margin-top: 30px;
+}
+
+.links {
+  font-size: 1.5rem;
+}
