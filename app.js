@@ -7,8 +7,7 @@ let show = document.querySelector('.show-div');
 let buttonCheck = document.querySelector('.btn-check');
 
 button.addEventListener('click', function(){
-    let uInput = userInput.value; 
-     outputUsername.innerHTML = uInput.toUpperCase();
+    let uInput = userInput.value.toUpperCase(); 
      // shows username in output username and converts to upper Case
 
     let listOfChar = uInput.split("");
@@ -20,6 +19,7 @@ button.addEventListener('click', function(){
     let reverseChar = reversedList.join("");
     // joins reversed array to a string luhsna
 
+    outputUsername.innerHTML = uInput;
     palindromeName.innerHTML = reverseChar.toUpperCase();
 
 
@@ -28,8 +28,10 @@ button.addEventListener('click', function(){
   
     if(uInput === reverseChar || uInput === expectionChar ){
         finalMessage.textContent="🥳🎉Congratulations! Your Name Is Palindrome. 🥳🎉";
+     
     } else{
         finalMessage.textContent="😞Your Name Is Not A Palindrome.😞";
+        
     }
 
     return show.style.display = 'block';
